@@ -109,17 +109,17 @@ SphereDisplay::SphereDisplay()
   ring_cnt_property_ = new IntProperty("Ring count", 64, "Number of rings in the sphere.", this,
                                        SLOT(onMeshParamChanged()));
   
-  segment_cnt_property_ = new IntProperty("Segment count", 64, "Number of segments in the sphere.", this,
+  segment_cnt_property_ = new IntProperty("Segment count", 192, "Number of segments in the sphere.", this,
                                        SLOT(onMeshParamChanged()));
 
-  fov_front_property_ = new FloatProperty("FOV front", 235.0, "Front camera field of view (degrees)", this,
+  fov_front_property_ = new FloatProperty("FOV front", 203.1, "Front camera field of view (degrees)", this,
                                           SLOT(onMeshParamChanged()));
 
-  fov_rear_property_ = new FloatProperty("FOV rear", 235.0, "Rear camera field of view (degrees)", this,
+  fov_rear_property_ = new FloatProperty("FOV rear", 203.1, "Rear camera field of view (degrees)", this,
                                          SLOT(onMeshParamChanged()));
 
   blend_angle_property_ =
-      new FloatProperty("Blend angle", 20, "Specifies the size of a region (in degrees), where two images "
+      new FloatProperty("Blend angle", 10, "Specifies the size of a region (in degrees), where two images "
                                            "overlap and are blended together",
                         this, SLOT(onMeshParamChanged()));
 

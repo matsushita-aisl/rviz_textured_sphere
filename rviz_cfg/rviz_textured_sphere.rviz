@@ -64,11 +64,11 @@ Visualization Manager:
       Transport Hint: raw
       Unreliable: false
       Value: false
-    - Blend angle: 20
+    - Blend angle: 10
       Class: rviz_textured_sphere/SphereDisplay
       Enabled: true
-      FOV front: 222.5
-      FOV rear: 222.5
+      FOV front: 203.1
+      FOV rear: 203.1
       Front camera image: /front_camera/image_raw
       Name: SphereDisplay
       Rear camera image: /rear_camera/image_raw
